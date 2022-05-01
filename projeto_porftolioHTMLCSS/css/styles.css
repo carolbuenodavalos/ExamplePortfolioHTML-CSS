@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:rgb(146, 230, 82);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+img{
+     max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 700;
+}
+
+body{ 
+    background: linear-gradient(90deg, #000000, #0f9b0f)
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li{
+    padding: 5px;
+    border-left: 2px dashed rgb(250, 250, 252);
+    transition: 800ms;
+}
+
+header ul li a:hover{
+    color:rgba(212, 201, 220, 0.932);
+    text-decoration: underline;
+}
+
+
+.container{
+    text-align: center;
+}
+
+
+.container .nome h1 {
+    font-size: 70px;
+}
+
+.container .nome h4 {
+    font-size: 25px;
+}
+
+.container .nome h5 {
+    font-size: 15px;
+}
+
+#arrow{
+    font-size: 40px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+.rotate {
+    transform: rotate(180dg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+
+#about p{
+    padding: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form input{
+    color: rgb(0,0,0);
+    width: 50%;
+    height: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+
+}
+
+.form button{
+    width: 15%;
+    padding: 5px 10px;
+    background-color: rgb(98, 176, 38);
+    color:rgba(253, 251, 254, 0.932);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+}
+
+.form button:hover{
+    background-color: rgb(14, 2, 26);
+    color:rgba(212, 201, 220, 0.932);
+}
+
+#contate p{
+    font-size: 30px;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 768px){
+    .form{
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 480px){
+    .container .name h1 {
+        font-size: 30px;
+    
+    }
+    .container .name h5 {
+        font-size: 15px;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+
+
+}
